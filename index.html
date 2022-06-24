@@ -4,93 +4,172 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Escola Front-End Curso Git e GitHub</title>
+    <link rel="stylesheet" href="css/style.css"/> <style>
+              </style>
+
+        <script src="https://code.jquery.com/jquery-3.6.0.js">
+
+        </script>
+        <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
+        <script>
+        $( function() {
+          $( "#draggable" ).draggable();
+        } );
+        </script>
 </head>
 <body>
-      <header>
-	Curso de Git-GitHub
-	Comandos Ferramentas Avaliação Aulas Podcast	
-      </header>
 
-      <main>
+    <header>
+        <div id="logo">
+            <img src="logos/GitHub_Logo_White.png"  width="100">
+        </div>
+    </header>        
+
+    <main>
+
+        <section id="menu-lateral">
+            <nav>
+                <ul>
+                    <li><a href="index.html"><img src="logos/mural.png" width="22" alt=""> Mural</a></li> 
+                    <li><a href="configuracoes.html"><img src="logos/bússula.png" alt="">Configurações</a></li>
+                    <li><a href="aulas.html"><img src="logos/aula.png" alt="">Aulas</a></li>
+                    <li><a href="podcast.html"><img src="logos/microfone.png" alt="">PodCast</a></li>
+                    <li><a href="testes.html"><img src="logos/teste.png" alt="">Testes</a></li>
+                    <li><a href="laboratorio.html"><img src="logos/laboratório.png" alt="">Laboratório</a></li>
+                    <li><a href="mapamental.html"><img src="logos/mental.png" alt="">Mapa Mental</a></li>
+                    <li><a href="googlesala.html"><img src="logos/google.png" alt="">Google</a></li>
+                    <li><a href="linksuteis.html"><img src="logos/link.png" alt="">Links Úteis</a></li>
+                    <li><a href="documentos.html"><img src="logos/DOCs.png" alt="">Docs</a></li>
+                    <li><a href="canalyoutube.html"><img src="logos/youtube.png" alt="">Youtube</a></li>
+                    <li><a href="linkedin"><img src="logos/linkedIn.png" alt="">LinkedIn</a></li>
+                    <li><a href="instagram.html"><img src="logos/instagram.png" alt="">Instagram</a></li>
+                    <li><a href="whatsapp.html"><img src="logos/whats.png" alt="">WhatsApp</a></li>
+                    <li><a href="branch.html"><img src="logos/Branch.png" alt="">Branch</a></li>
+                    <li><a href="dontpad.html"><img src="logos/nuvem.png" alt="">DontPad</a></li>
+               
+                </ul>
+            </nav>
+        </section>
+            <h1>Mural de Aviso <span class="badge badge-secondary">Novo</span></h1>
+        <section id="area-principal">
+            <div id="draggble" class="ui-widget-content">
+
+            </div>
+        </section>
+            <form method="post" action="correcao.html">
+                
+                Qual o seu github? 
+                <input type="text"><br><br>
+                Qual o nome da branch da última aula? 
+                <input type="date"><br><br>
+                Quando foi seu último commit?
+                <input type="time"><br><br>
+                Qual a hora desse commit?
+                <input type="time"><br><br>
+                Qual a mensagem do commit?
+                <input type="text"><br><br>
+                Você já trabalha na área?
+                <input type="radio"><br><br>
+                sim <input type="radio"><br><br>
+                não <input type="radio"><br><br>
+                quais tecnologias você domina? <br><br>
+                HTML 5 <input type="checkbox">&nbsp;<br><br>
+                CSS 3 <input type="checkbox">&nbsp;<br><br>
+                Java Script <input type="checkbox">&nbsp;<br><br>
+                Node Js <input type="checkbox">&nbsp;<br><br>
+                Modelagem de Dados <input type="checkbox">&nbsp;<br><br>
+                MySql <input type="checkbox">&nbsp;<br><br>
+                Express <input type="checkbox">&nbsp;<br><br>
+                Next Js <input type="checkbox">&nbsp;<br><br>
+                Linguagem C# <input type="checkbox">&nbsp;<br><br>
+                
+
+            </form>
+
+        <section id="comandos">
+
+        
+        
         Tabela de Comandos Git
 
-        <table border="3">
-           <tr>
-               <th>Descrição</th>
-               <th>Comando</th>
-           </tr>
-           <tr>
+        <table border="3"> 
+            <tr>
+                <th>Descrição</th>
+                <th>Comando</th>
+            </tr>
+            <tr>
                 <td>Ver a versão</td>
                 <td>git --version</td>
-           </tr>
-           <tr>
+            </tr>
+            <tr>
                 <td>Criar a pasta</td>
-                <td>mk dir nome da pasta </td>
-           </tr>
-           <tr>
+                <td>mk dir nome da pasta</td>
+            </tr>
+            <tr>
                 <td>Inicializar o repositório</td>
                 <td>git init</td>
+            </tr>
+            <tr>
+                <td>Visualizar informações</td>
+                <td>git status</td>
+            </tr>
+            <tr>
+                <td>Listar recursos da pasta</td>
+                <td>ls</td>
+            </tr>
+            <tr>
+                <td>Navegar nas pastas</td>
+                <td>cd ou cd ..</td>
+            </tr>
+            <tr>
+                <td>Abrir nano</td>
+                <td>nano nome do arquivo</td>
+            </tr>
+            <tr>
+                <td>Fechar nano</td>
+                <td>CTRl -X</td>
+            </tr>
+            <tr>
+                <td>Quem é você?</td>
+                <td>git config --local "user.name" e "user.email"</td>
+            </tr>
+            <tr>
+                <td>Listar os commits</td>
+                <td>git log ou git log --oneline ou git log -p
+                    obs:use q para sair
+            </td>
+            </tr>
+          <tr>
+                <td>Ignorar arquivo</td>
+                <td>Criar o arquivo .gitignore, depois adicionar e "commitar"</td>
           </tr>
           <tr>
-            <td>Visualizar informações</td>
-            <td>git status</td>
+                <td>listar repositório remoto</td>
+                <td>git remote</td>
           </tr>
           <tr>
-            <td>Listar recurso da pasta</td>
-            <td>ls</td>
+                <td>Adicionar repositório</td>
+                <td>git remote add origin url do repositório</td>
           </tr>
           <tr>
-            <td>Navegar nas pastas</td>
-            <td>cd ou cd ..</td>
+                <td>Enviar para o remoto com  -u</td>
+                <td>git push -u origin master, depois use git push</td>
           </tr>
           <tr>
-            <td>Abrir nano</td>
-            <td>nano nome do arquivo</td>
+                <td>Desfazer um commit</td>
+                <td>git revert coloque o hash do seu commit</td>
           </tr>
-          <tr>
-            <td>Fechar nano</td>
-            <td>CTRL + X</td>
-          </tr>
-          <tr>
-            <td>Quem é você?</td>
-            <td>git config --local user.name "seu nome" e user.email "seu email"</td>
-          </tr>
-          <tr>
-            <td>Listar os commits</td>
-            <td>git log ou git log --oneline ou git log -p obs: use q para sair</td>
-          </tr>
-          <tr>
-            <td>Ignorar arquivo</td>
-            <td>Criar o arquivo .gitignore, depois adicionar e "commitar"</td>
-          </tr>
-          <tr>
-            <td>listar repositório remoto</td>
-            <td>git remote</td>
-          </tr>
-          <tr>
-            <td>Adicionar repositório</td>
-            <td>git remote add origin url do repositório</td>
-          </tr>
-          <tr>
-            <td>Enviar para o remoto com  -u</td>
-            <td>git push -u origin master, depois use git push</td>
-          </tr>
-          <tr>
-            <td>Desfazer um commit</td>
-            <td>git revert coloque o hash do seu commit</td>
-          </tr>
-
 
         </table>
+        </section>
 
 
-      </main>
+    </main>
 
-      <footer>
-	CursoGit-GitHub&copy 2022 - Regys Wendell
-      </footer>
+    <footer>
+        CursoGit-GitHub&copy  2022 - Regys Wendell
+    </footer>
 
-    
 </body>
 </html>
